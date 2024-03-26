@@ -1,5 +1,7 @@
 FROM python:3.12.2-slim-bullseye
 
+LABEL org.opencontainers.image.source="https://github.com/LucasSovre/usine_logicielle"
+
 # Set the working directory
 WORKDIR /app
 
