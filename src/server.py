@@ -13,7 +13,7 @@ def calculator():
     b = request.args.get('b', 0, type=int)
     if a == 0 or b == 0:
         return 'Please provide a and b query parameters'
-    return str(a + b)
+    return str(a - b)
 
 if __name__ == '__main__':
    app.run(host=os.getenv("PYTHON_HOST", "127.0.0.1"), port=os.getenv("PYTHON_PORT", "5000"))
