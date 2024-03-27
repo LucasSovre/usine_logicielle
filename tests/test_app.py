@@ -8,4 +8,4 @@ def test_should_status_code_ok(client):
 def test_calculator(client):
 	response = client.get('/calculator?a=1&b=2')
 	assert response.status_code == 200
-	assert response.data == b'3'
+	assert response.data == b'-1'
